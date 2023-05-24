@@ -16,11 +16,6 @@ class TestRepository implements TestRepositoryInterface
         return Test::findOrFail($id);
     }
     public function deleteTestById($id)
-    public function getTest($id)
-    {
-        return Test::findOrFail($id);
-    }
-    public function deleteTest($id)
     {
         Test::destroy($id);
     }
