@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('tests', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('content');
+            $table->boolean('is_completed')->default(false);
             $table->timestamps();
         });
     }
